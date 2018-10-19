@@ -9,9 +9,6 @@ lasthack = 0
 current = int(time.time())
 
 class Hack():
-	def __init__(self):
-		completeHack
-		
 	def completeHack():
 		if status == 0:
 			return -2
@@ -25,6 +22,9 @@ class Hack():
 				return 0;
 		else:
 			return -1;
+
+	def __init__(self):
+		completeHack
 
 class Control():
 	def __init__(number):
