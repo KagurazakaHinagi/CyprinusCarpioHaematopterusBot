@@ -4,7 +4,7 @@ file = 'user.config'
 
 class Analysis():
 
-	def __init__(self, msg, content_type, chat_type, chat_id):
+	def __init__(self, msg, content_type, chat_type, chat_id, admin, bot):
 
 		if (chat_type == 'private' and chat_id == admin):
 			if msg['text'] == '/starthack':

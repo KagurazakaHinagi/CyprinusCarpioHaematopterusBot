@@ -12,8 +12,7 @@ from telepot.loop import MessageLoop
 from telepot.helper import ChatHandler
 from telepot.delegate import per_chat_id, per_inline_from_id, create_open, pave_event_space
 
-global bot
-global admin
+
 
 class MessageCounter(ChatHandler):
     def __init__(self, *args, **kwargs):
@@ -24,7 +23,7 @@ class MessageCounter(ChatHandler):
         print(content_type, chat_type, chat_id)
         with open('work.log','a') as log:
             pprint(msg, stream=log)
-        chat.Analysis(msg, content_type, chat_type, chat_id)
+        chat.Analysis(msg, content_type, chat_type, chat_id, admin, bot)
 
 TOKEN = sys.argv[1]
 admin = sys.argv[2]
