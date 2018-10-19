@@ -9,7 +9,7 @@ lasthack = 0
 current = int(time.time())
 
 class Hack():
-	def __init__:
+	def __init__(self):
 		if status == 0:
 			return -2
 
