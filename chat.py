@@ -1,3 +1,4 @@
+import hack
 file = 'user.config'
 # KOI_PHOTO = 
 # SALTED_PHOTO = 
