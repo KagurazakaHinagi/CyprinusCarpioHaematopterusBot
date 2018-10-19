@@ -6,8 +6,8 @@
 import sys
 import time
 import telepot
-import pprint
 import chat
+from pprint import pprint
 from telepot.loop import MessageLoop
 from telepot.helper import ChatHandler
 from telepot.delegate import per_chat_id, per_inline_from_id, create_open, pave_event_space
