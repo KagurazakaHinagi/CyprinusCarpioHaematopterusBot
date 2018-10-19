@@ -19,7 +19,7 @@ class Analysis():
 
 		if (chat_type == 'private' and content_type == 'text'):
 			if msg['text'] == '/start':
-				if(msg['from'].has_key('username') == 0):
+				if(msg['from'].__contains__('username') == False):
 					bot.sendMessage("Please set your Telegram Username first and then send /start again to continue. ")
 				else:
 					username = msg['from']['username']
