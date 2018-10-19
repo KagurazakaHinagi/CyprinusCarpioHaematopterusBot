@@ -10,6 +10,9 @@ current = int(time.time())
 
 class Hack():
 	def __init__(self):
+		completeHack
+		
+	def completeHack():
 		if status == 0:
 			return -2
 
